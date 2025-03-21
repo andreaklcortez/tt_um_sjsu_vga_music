@@ -89,7 +89,7 @@ module tt_um_vga_example(
   wire vsync;
   wire [1:0] R;
   wire [1:0] G;
-  wire [1:0] B;
+  wire [7:0] B;
   wire video_active;
   wire [9:0] x;
   wire [9:0] y;
@@ -147,7 +147,7 @@ module tt_um_vga_example(
   reg       note2;
 
   // lead notes
-  wire [4:0] note_in = timer[9-:8];           // 16 notes, 16 frames per note each. 256 frames total, ~4 seconds
+  wire [7:0] note_in = timer[9-:8];           // 16 notes, 16 frames per note each. 256 frames total, ~4 seconds
   always @(note_in)
   case(note_in)
       8'd0 : note_freq = `C5
