@@ -73,6 +73,7 @@
 `define As5 17; // 932.32 Hz 
 `define B5  16; // 987.76 Hz 
 
+
 module tt_um_vga_example(
   input  wire [7:0] ui_in,    // Dedicated inputs
   output wire [7:0] uo_out,   // Dedicated outputs
@@ -84,12 +85,13 @@ module tt_um_vga_example(
   input  wire       rst_n     // reset_n - low to reset
 );
 
+
   // VGA signals
   wire hsync;
   wire vsync;
   wire [1:0] R;
   wire [1:0] G;
-  wire [7:0] B;
+  wire [1:0] B;
   wire video_active;
   wire [9:0] x;
   wire [9:0] y;
@@ -97,6 +99,8 @@ module tt_um_vga_example(
 
   // TinyVGA PMOD
   assign {R,G,B} = {6{video_active * sound}};
+  assign B = 2'b10; 
+
   assign uo_out = {hsync, B[0], G[0], R[0], vsync, B[1], G[1], R[1]};
   assign uio_out = {sound, 7'b0};
 
