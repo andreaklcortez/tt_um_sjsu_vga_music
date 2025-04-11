@@ -7,6 +7,7 @@
  */
 
 `default_nettype none
+`include "hvsync_generator.v"
 
 `define MUSIC_SPEED   1'b1  // for 60 FPS
 // `define MUSIC_SPEED   2'd2  // for 30 FPS
