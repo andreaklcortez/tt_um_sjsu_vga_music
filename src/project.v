@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2024 Renaldas Zioma, Erik Hemming
  * SPDX-License-Identifier: Apache-2.0
- */
+ */ 
 
 `default_nettype none
 `include "hvsync_generator.v"
