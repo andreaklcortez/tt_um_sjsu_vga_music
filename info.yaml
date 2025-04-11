@@ -1,10 +1,10 @@
 
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "SJSU Fight Song"      # Project title
+  author:       "Andrea Cortez"      # Your name
+  discord:      "@scoobst3r"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "VGA Code of SJSU Fight SOng"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     25175000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -20,10 +20,10 @@ project:
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
-  # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+ # Inputs
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "Cin"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -31,14 +31,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "R1"
-  uo[1]: "G1"
-  uo[2]: "B1"
-  uo[3]: "VSync"
-  uo[4]: "R0"
-  uo[5]: "G0"
-  uo[6]: "B0"
-  uo[7]: "HSync"
+  uo[0]: "S"
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: "Cout"
+  uo[6]: ""
+  uo[7]: ""
 
   # Bidirectional pins
   uio[0]: ""
