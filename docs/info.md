@@ -10,11 +10,10 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 
-
 ## How to test
 
-
+Connect the VGA and Sound PMOD to the TT board.  Connect the Monitor and Speaker to the appropriate PMOD
 
 ## External hardware
-
+TT VGA PMOD, VGA Monitor Cable, TT Sound PMOD
 
