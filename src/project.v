@@ -1,6 +1,6 @@
 /*
  * "San Jose Fight Song"  
- * By: Andrea Cortez
+ * By Andrea Cortez
  *
  * Copyright (c) 2024 Renaldas Zioma, Erik Hemming
  * SPDX-License-Identifier: Apache-2.0
